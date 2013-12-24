@@ -1,0 +1,5 @@
+# Ignore Jekyll generated site
+_site
+
+# Ignore autosave files
+*~
