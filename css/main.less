@@ -18,20 +18,20 @@ html {
 body {
     background-color: @background-color;  
     margin-bottom: @footer-height;
+    min-width: @site-width;
 }
 
 .content {
     margin-left: auto;
     margin-right: auto;
-    width: @site-width;
+    width: @site-width - (2 * @global-margin);
     padding: @global-margin;
     clear: both;   
     overflow: hidden;
 }
 
 .content-background {
-    background-color: @background-color;
-    width: 100%;
+    min-width: @site-width;
     clear: both;
     padding-top: @global-margin;
     padding-bottom: @global-margin;
@@ -50,6 +50,7 @@ body {
     left: 0;
     bottom: 0;
     height: @footer-height;
+    min-width: @site-width;
     width: 100%;
     
     background-color: @footer-background-color;
