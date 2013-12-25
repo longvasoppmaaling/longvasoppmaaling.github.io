@@ -1,9 +1,23 @@
+/*
+   Acknowledgements:
+    - Thanks to 
+
+
+*/
+
+
 @import "constants.less";
 @import "header.less";
 @import "navigation.less";
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
-    background-color: @background-color;   
+    background-color: @background-color;  
+    margin-bottom: @footer-height;
 }
 
 .content {
@@ -18,7 +32,6 @@ body {
 .content-background {
     background-color: @background-color;
     width: 100%;
-    float: left;
     clear: both;
     padding-top: @global-margin;
     padding-bottom: @global-margin;
@@ -30,6 +43,22 @@ body {
     
     border-top: 1px solid @stroke-color;
     border-bottom: 1px solid @stroke-color;
+}
+
+#site-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: @footer-height;
+    width: 100%;
+    
+    background-color: @footer-background-color;
+    border-top: 1px solid @stroke-color;
+    text-align: center;
+    line-height: @footer-height;
+    
+    font-family: @font-main-family;
+    font-size: 1em;
 }
 
 .landing-image {
@@ -67,7 +96,4 @@ h1 {
     font-family: @font-header-family;
     font-size: 2em;
     clear: both;
-    
-    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 }
-    
