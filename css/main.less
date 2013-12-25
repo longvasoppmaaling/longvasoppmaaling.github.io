@@ -6,8 +6,68 @@ body {
     background-color: @background-color;   
 }
 
-.site {
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: @site-width;
+    padding: @global-margin;
+    clear: both;   
+    overflow: hidden;
+}
+
+.content-background {
+    background-color: @background-color;
     width: 100%;
-    height: 100%;
+    float: left;
+    clear: both;
+    padding-top: @global-margin;
+    padding-bottom: @global-margin;
+}
+
+.content-alternate {
+    .content-background;
+    background-color: @alternate-background-color;
+    
+    border-top: 1px solid @stroke-color;
+    border-bottom: 1px solid @stroke-color;
+}
+
+.landing-image {
+    float: left;
+    margin-right: 2 * @global-margin;
+}
+
+.landing-feature {
+    clear: both;
+    width: 100%;
+    padding-top: @global-margin;
+    margin-top: @global-margin;
+}
+
+.textbase {
+    color: @text-color;
+    font-size: 1.3em;
+    
+    margin-top: @global-margin * 0.7;
+    margin-bottom: @global-margin * 0.7;
+}
+
+p {
+    .textbase;
+    font-family: @font-main-family;
+}
+
+strong {
+    .textbase;
+    font-family: @font-strong-family;
+}
+
+h1 {
+    color: @text-color;
+    font-family: @font-header-family;
+    font-size: 2em;
+    clear: both;
+    
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 }
     
