@@ -4,5 +4,10 @@ title: Longvas Oppmåling as - Nyheter
 ---
 
 {% for post in paginator.posts %}
-
+    {% assign firstpost = site.posts | first %}
+    {% if post.url == firstpost.url %}
+        {% include post.html %}
+    {% else %}
+        {% include post.html excerpt=true %}
+    {% endif %}
 {% endfor %}

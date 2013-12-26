@@ -1,0 +1,29 @@
+{% if post %}
+    {% assign article=post %}
+{% else %}
+    {% assign article=page %}
+{% endif %}
+
+{% assign excerpt = (include.excerpt == true) %}
+
+<div class="post">
+    <header>
+        <a href="{{ article.url }}"><h1>{{article.title}}</h1></a>
+        <p class="label">Publisert {{ article.date | date: "%d/%m-%Y" }}</p>
+    </header>
+        {% if excerpt %} 
+            <blockquote>
+                {{ article.excerpt }} [ ... ]
+            </blockquote>
+        {% else %} 
+            <article>
+                {{ article.content | markdownify }} 
+            </article>
+        {% endif %}
+    
+    {% if excerpt %}
+    <footer>
+        <a href="{{ article.url }}">Les mer</a>
+    </footer>
+    {% endif %}
+</div>

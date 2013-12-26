@@ -9,6 +9,7 @@
 @import "constants.less";
 @import "header.less";
 @import "navigation.less";
+@import "post.less";
 
 html {
     position: relative;
@@ -74,9 +75,14 @@ body {
     margin-top: @global-margin;
 }
 
+/*
+    TEXT
+*/
+
 .textbase {
     color: @text-color;
     font-size: 1.3em;
+    text-decoration: none;
     
     margin-top: @global-margin * 0.7;
     margin-bottom: @global-margin * 0.7;
@@ -85,6 +91,12 @@ body {
 p {
     .textbase;
     font-family: @font-main-family;
+}
+    
+.label {
+    .textbase;
+    font-family: @font-main-family;
+    color: @label-color;
 }
 
 strong {
@@ -98,3 +110,17 @@ h1 {
     font-size: 2em;
     clear: both;
 }
+            
+/* 
+    LINKS
+*/
+            
+.linkbase {
+    font-family: @font-main-family;
+    text-decoration: none;
+    font-size: 100%;
+}
+            
+a, a:link, a:hover, a:active, a:visited {
+    .linkbase;
+} 
