@@ -1,6 +1,8 @@
 {% if post %}
+    {% assign standalone = false %}
     {% assign article=post %}
 {% else %}
+    {% assign standalone=true %}
     {% assign article=page %}
 {% endif %}
 
@@ -8,7 +10,11 @@
 
 <div class="post">
     <header>
-        <a href="{{ article.url }}"><h1>{{article.title}}</h1></a>
+        <h1>
+            {% if standalone == false %}<a href="{{ article.url }}">{% endif %}
+                {{article.title}}
+            {% if standalone == false %}</a>{% endif %}
+        </h1>
         <p class="label">Publisert {{ article.date | date: "%d/%m-%Y" }}</p>
     </header>
         {% if excerpt %} 
