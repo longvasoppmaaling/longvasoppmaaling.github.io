@@ -84,6 +84,7 @@ body {
     color: @text-color;
     font-size: 1.3em;
     text-decoration: none;
+    font-family: @font-main-family;
     
     margin-top: @global-margin * 0.7;
     margin-bottom: @global-margin * 0.7;
@@ -95,8 +96,6 @@ p {
 }
     
 .label {
-    .textbase;
-    font-family: @font-main-family;
     color: @label-color;
 }
 
@@ -131,6 +130,17 @@ a, a:link, a:hover, a:active, a:visited {
 */
             
 table {
-                
+    .textbase;
+    text-align: left;
+    
 }
+        
+table tr td {
+    padding: 0.3em;
+}
+        
+        table thead tr td{
+            .label;
+            font-weight: bold;
+        }
             

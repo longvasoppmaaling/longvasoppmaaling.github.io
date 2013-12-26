@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Longvas Oppmåling as lanserer nettside
+title: Longvas Oppmåling lanserer nettside
 ---
 
 Longvas Oppmåling as har siden oppstart i 1989 hatt en betydelig tilstedeværelse i bransjen. Vi ringer nå inn 2014 med å utvide tilstedeværelsen til internett. Firmaet har lenge glimret med sitt digitale fravær, mye takket være en konstant pågang fra kunder med nye oppdrag.
