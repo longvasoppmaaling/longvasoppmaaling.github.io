@@ -1,13 +1,15 @@
 <nav class="navigation">
     <ul>
-        <li>
-            <a href="/">Tjenester</a>
-        </li>
-        <li>
-            <a href="/nyheter/">Nyheter</a>
-        </li>
-        <li>
-            <a href="/kontakt.html">Kontakt</a>
-        </li>
+        {% for nav in site.data.navigation %}
+            {% if nav.url == page.url %}
+                {% assign id = 'current' %}
+            {% else %}
+                {% assign id = '' %}
+            {% endif %}
+        
+            <li>
+                <a href="{{ nav.url }}" id="{{ id }}">{{ nav.title }}</a>
+            </li>
+        {% endfor %}
     </ul>
 </nav>
