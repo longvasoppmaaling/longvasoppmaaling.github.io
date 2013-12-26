@@ -7,8 +7,14 @@
                 {% assign id = '' %}
             {% endif %}
         
+            {% if forloop.index == 1 %}
+                {% assign class = 'navigation-first' %}
+            {% else %}
+                {% assign class = '' %}
+            {% endif %}
+        
             <li>
-                <a href="{{ nav.url }}" id="{{ id }}">{{ nav.title }}</a>
+                <a href="{{ nav.url }}" id="{{ id }}" class="{{ class }}">{{ nav.title }}</a>
             </li>
         {% endfor %}
     </ul>

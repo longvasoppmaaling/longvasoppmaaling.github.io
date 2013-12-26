@@ -1,8 +1,8 @@
 - title: "Tjenester"
   url: "/index.html"
 
-- title: "Nyheter"
-  url: "/nyheter/index.html"
+#- title: "Nyheter"
+#  url: "/nyheter/index.html"
 
 - title: "Kontakt"
   url: "/kontakt.html"
