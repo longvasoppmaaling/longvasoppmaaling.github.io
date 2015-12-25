@@ -1,6 +1,6 @@
 name: Longvas Oppmåling as
 markdown: redcarpet
 url: http://www.longvas.no/
-highlighter: false
+highlighter: pygments
 paginate: 3
 paginate_path: "nyheter/side:num"
