@@ -4,26 +4,26 @@
 
 .navigation ul li {
     display: inline-block;   
-    width: @nav-block-width;
-    height: @nav-block-height;
+    width: $nav-block-width;
+    height: $nav-block-height;
     position: relative;
 }
 
 .navigation ul li a {
     display: inline;
-    width: @nav-block-width;
+    width: $nav-block-width;
     
-    border-left: 1px solid @separator-color;
+    border-left: 1px solid $separator-color;
     
-    font-family: @font-main-family;
-    font-weight: light;
+    font-family: $font-main-family;
+    font-weight: lighter;
     font-size: 1.5em;
     
     text-align: center;
     position: absolute;
     bottom: 0;
     
-    color: @text-color;
+    color: $text-color;
     text-decoration: none;
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px
 }
@@ -33,7 +33,7 @@
 }
 
 .navigation ul li a:hover {
-    color: @separator-color;   
+    color: $separator-color;   
 }
 
 #current {

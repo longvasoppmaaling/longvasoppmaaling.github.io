@@ -1,0 +1,10 @@
+.map {
+    display: block;
+    border: 1px solid $stroke-color;
+    width: $site-width - 2 * $global-margin;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $global-margin;
+    margin-bottom: $global-margin;
+}
+

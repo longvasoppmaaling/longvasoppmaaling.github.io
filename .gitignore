@@ -1,5 +1,6 @@
-# Ignore Jekyll generated site
-_site
+# Ignore Jekyll generated content
+_site/
+.sass-cache/
 
 # Ignore autosave files
 *~
