@@ -14,7 +14,6 @@ html {
 body {
     background-color: $background-color;
     margin-bottom: $footer-height;
-    min-width: $site-width;
 }
 
 .content {
@@ -28,7 +27,6 @@ body {
     left: 0;
     bottom: 0;
     height: $footer-height;
-    min-width: $site-width;
     width: 100%;
 
     background-color: $footer-background-color;

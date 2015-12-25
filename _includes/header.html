@@ -1,8 +1,11 @@
-<div class="content">
-    <a href="/" class="logo">
-        <img src="/images/logo.png" alt="{{ site.name }}">
-    </a>
-    
-    {% include navigation.html %}
-    
+<div class="container content">
+    <div class="row">
+        <a href="/" class="col-md-4">
+            <img src="/images/logo.png" alt="{{ site.name }}">
+        </a>
+
+        <div class="col-md-8 navigation-container">
+            {% include navigation.html %}
+        </div>
+    </div>
 </div>

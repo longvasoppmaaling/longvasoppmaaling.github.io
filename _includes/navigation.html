@@ -2,7 +2,7 @@
     <ul>
         {% for nav in site.data.navigation %}
             {% if nav.url == page.url %}
-                {% assign id = 'current' %}
+                {% assign id = 'current-nav' %}
             {% else %}
                 {% assign id = '' %}
             {% endif %}

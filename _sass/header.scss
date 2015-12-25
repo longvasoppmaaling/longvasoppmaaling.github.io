@@ -2,11 +2,4 @@
     width: 100%;
     background-color: $header-background-color;
     border-bottom: 1px solid $stroke-color;
-    
-    // To avoid collapse
-    float: left;
-}
-
-.logo {
-    clear: left;
 }
