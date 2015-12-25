@@ -26,9 +26,6 @@ body {
 }
 
 .content {
-    margin-left: auto;
-    margin-right: auto;
-    width: $site-width - (2 * $global-margin);
     padding: $global-margin;
     clear: both;   
     overflow: hidden;
@@ -43,10 +40,10 @@ body {
 
 .content-alternate {
     @extend .content-background;
-    background-color: $alternate-background-color;
+    //background-color: $alternate-background-color;
     
-    border-top: 1px solid $stroke-color;
-    border-bottom: 1px solid $stroke-color;
+    //border-top: 1px solid $stroke-color;
+    //border-bottom: 1px solid $stroke-color;
 }
 
 #site-footer {
@@ -66,16 +63,12 @@ body {
     font-size: 1em;
 }
 
-.landing-image {
-    float: left;
-    margin-right: 2 * $global-margin;
+.feature {
+    padding-top: $global-margin;
 }
 
-.landing-feature {
-    clear: both;
-    width: 100%;
-    padding-top: $global-margin;
-    margin-top: $global-margin;
+.feature > div:first-child {
+    margin-bottom: $global-margin;
 }
 
 /*
