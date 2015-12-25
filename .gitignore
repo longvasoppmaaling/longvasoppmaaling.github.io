@@ -3,3 +3,7 @@ _site
 
 # Ignore autosave files
 *~
+
+# IDEA stuff
+.idea/
+*.iml
