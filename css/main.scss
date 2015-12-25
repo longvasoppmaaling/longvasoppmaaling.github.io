@@ -36,7 +36,6 @@ body {
     text-align: center;
     line-height: $footer-height;
 
-    font-family: $font-main-family;
     font-size: 1em;
 }
 
@@ -70,7 +69,6 @@ body {
     color: $text-color;
     font-size: 1.3em;
     text-decoration: none;
-    font-family: $font-main-family;
 
     margin-top: $global-margin * 0.7;
     margin-bottom: $global-margin * 0.7;
@@ -78,7 +76,6 @@ body {
 
 p {
     @extend .textbase;
-    font-family: $font-main-family;
 }
 
 .label {
@@ -87,12 +84,10 @@ p {
 
 strong {
     @extend .textbase;
-    font-family: $font-strong-family;
 }
 
 h1 {
     color: $text-color;
-    font-family: $font-header-family;
     clear: both;
 }
 
@@ -101,7 +96,6 @@ h1 {
 */
 
 .linkbase {
-    font-family: $font-main-family;
     text-decoration: none;
     font-size: 100%;
 }
