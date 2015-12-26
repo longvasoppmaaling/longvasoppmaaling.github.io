@@ -3,75 +3,81 @@ layout: default
 title: Longvas Oppmåling as - Tjenester
 ---
 
-<div class="row feature">
-    <img class="col-md-4 col-xs-12" src="/images/kirke.jpg" alt="Fotorealistisk scanning">
-    <div class="col-md-8 col-xs-12 feature-content">
-        <h1 class="feature-title">Scanning i 3D erstatter tradisjonell landmåling</h1>
-        <strong>Vil du vite hvilke muligheter 3D-scanning byr på for din bedrift? <a href="kontakt.html">Ta kontakt!</a></strong>
-        <p>Nyeste teknologi innen 3D-scanning produserer modeller som er så detaljrike at de lett kan forveksles med fotografier. </p>
-        <p>Scanneren samler fargeinformasjon om hvert enkelt punkt, og ved å kombinere millioner av slike punkter kan vi generere data av en detaljgrad og et omfang man ikke kan oppnå ved hjelp av tradisjonell landmåling.</p>
+<div class="container">
+    <div class="row feature">
+        <img class="col-md-4 col-xs-12" src="/images/kirke.jpg" alt="Fotorealistisk scanning">
+        <div class="col-md-8 col-xs-12 feature-content">
+            <h1 class="feature-title">Scanning i 3D erstatter tradisjonell landmåling</h1>
+            <strong>Vil du vite hvilke muligheter 3D-scanning byr på for din bedrift? <a href="kontakt.html">Ta kontakt!</a></strong>
+            <p>Nyeste teknologi innen 3D-scanning produserer modeller som er så detaljrike at de lett kan forveksles med fotografier. </p>
+            <p>Scanneren samler fargeinformasjon om hvert enkelt punkt, og ved å kombinere millioner av slike punkter kan vi generere data av en detaljgrad og et omfang man ikke kan oppnå ved hjelp av tradisjonell landmåling.</p>
+        </div>
     </div>
-</div>
 
-<div class="row feature">
-    <img class="col-md-4 col-xs-12" src="/images/trollstigen.jpg" alt="Totalstasjon">
-    <div class="col-md-8 col-xs-12 feature-content">
-        <h1 class="feature-title">Kreative løsninger fra erfarne fagfolk</h1>
-        <strong>Fokuser på kjernevirksomheten din, overlat oppmålingen til oss.</strong>
-        <p>Siden 1989 har Longvas Oppmåling levert landmålingstjenester til kommune, stat og private aktører.</p>
-        <p>Gjennom kontinuerlig oppdatert kompetanse, utstyr og et glødende engasjement har vi etablert oss som en ledende totalleverandør av landmålingstjenester i Møre og Romsdal.</p>
+    <div class="row feature">
+        <img class="col-md-4 col-xs-12" src="/images/trollstigen.jpg" alt="Totalstasjon">
+        <div class="col-md-8 col-xs-12 feature-content">
+            <h1 class="feature-title">Kreative løsninger fra erfarne fagfolk</h1>
+            <strong>Fokuser på kjernevirksomheten din, overlat oppmålingen til oss.</strong>
+            <p>Siden 1989 har Longvas Oppmåling levert landmålingstjenester til kommune, stat og private aktører.</p>
+            <p>Gjennom kontinuerlig oppdatert kompetanse, utstyr og et glødende engasjement har vi etablert oss som en ledende totalleverandør av landmålingstjenester i Møre og Romsdal.</p>
+        </div>
     </div>
-</div>
 
-<div class="row feature">
-    <img class="col-md-4 col-xs-12" src="/images/flatholmen.jpg" alt="Sjøbunnkartlegging">
-    <div class="col-md-8 col-xs-12 feature-content">
-        <h1 class="feature-title">Moderne sjøbunnkartlegging åpner for presise beregninger</h1>
-        <strong>Kombinert med scanning produserer vi detaljrike 3D-modeller av alle flater, både under og over vann.</strong>
-        <p>Enten man er i planleggingsfasen for å plassere en kai eller har behov for masseberegning i sammenheng med utfylling, er et godt datagrunnlag for sjøbunnen nøkkelen til et godt resultat.</p>
-        <p>Vi har utstyret og kompetansen til å produsere nøyaktige datamodeller av sjøbunnen, raskt og til en konkurransedyktig pris.</p>
+    <div class="row feature">
+        <img class="col-md-4 col-xs-12" src="/images/flatholmen.jpg" alt="Sjøbunnkartlegging">
+        <div class="col-md-8 col-xs-12 feature-content">
+            <h1 class="feature-title">Moderne sjøbunnkartlegging åpner for presise beregninger</h1>
+            <strong>Kombinert med scanning produserer vi detaljrike 3D-modeller av alle flater, både under og over vann.</strong>
+            <p>Enten man er i planleggingsfasen for å plassere en kai eller har behov for masseberegning i sammenheng med utfylling, er et godt datagrunnlag for sjøbunnen nøkkelen til et godt resultat.</p>
+            <p>Vi har utstyret og kompetansen til å produsere nøyaktige datamodeller av sjøbunnen, raskt og til en konkurransedyktig pris.</p>
+        </div>
     </div>
 </div>
 
 <div class="jumbotron">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Modellering</h1>
-            <p>Det umiddelbare resultatet av 3D-scanning er en punktsky bestående av millioner av punkter.
-                Fra dette kan vi bygge modeller som egner seg til bruk i DAK-programmer.</p>
-            <p>Under demonstrerer vi hvordan nøyaktige scan av virkelige bygninger kan omgjøres til
-                interaktive og detaljerte 3D-modeller.</p>
-        </div>
-    </div>
-
-    <div class="row">
-        {% for video in site.data.videos %}
-        <div class="col-md-6 col-xs-12">
-            <h2>{{ video.title }}</h2>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe id="yt_{{ video.videoid }}"
-                        class="embed-responsive-item ytvideo"
-                        src="https://www.youtube.com/embed/{{ video.videoid }}?rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;enablejsapi=1&amp;autoplay=1&amp;loop=1&amp;playlist={{ video.videoid }}"
-                        allowfullscreen></iframe>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Modellering</h1>
+                <p>Det umiddelbare resultatet av 3D-scanning er en punktsky bestående av millioner av punkter.
+                    Fra dette kan vi bygge modeller som egner seg til bruk i DAK-programmer.</p>
+                <p>Under demonstrerer vi hvordan nøyaktige scan av virkelige bygninger kan omgjøres til
+                    interaktive og detaljerte 3D-modeller.</p>
             </div>
         </div>
-        {% endfor %}
+
+        <div class="row">
+            {% for video in site.data.videos %}
+            <div class="col-md-6 col-xs-12">
+                <h2>{{ video.title }}</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="yt_{{ video.videoid }}"
+                            class="embed-responsive-item ytvideo"
+                            src="https://www.youtube.com/embed/{{ video.videoid }}?rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;enablejsapi=1&amp;autoplay=1&amp;loop=1&amp;playlist={{ video.videoid }}"
+                            allowfullscreen></iframe>
+
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
 
-<div class="row">
-    <div class="col-md-12">
-        <h1>Oversikt over tjenester</h1>
-        <p>Som totalleverandør og spesialist tar vi på oss så godt som alle mulige typer oppdrag knyttet
-            til oppmåling. Longvas Oppmåling as er basert på Sunnmøre, men selv om de fleste oppdragene vi påtar oss er lokalisert
-            i denne regionen, har vi også utført oppdrag så langt borte som Finnmark.</p>
+<div class="container feature">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Oversikt over tjenester</h1>
+            <p>Som totalleverandør og spesialist tar vi på oss så godt som alle mulige typer oppdrag knyttet
+                til oppmåling. Longvas Oppmåling as er basert på Sunnmøre, men selv om de fleste oppdragene vi påtar oss er lokalisert
+                i denne regionen, har vi også utført oppdrag så langt borte som Finnmark.</p>
 
             <p>Noen av de mest etterspurte tjenestene er:</p>
-        <ul>
-            <li>Masseberegning</li>
-            <li>Noe annet</li>
-        </ul>
+            <ul>
+                <li>Masseberegning</li>
+                <li>Noe annet</li>
+            </ul>
+        </div>
     </div>
 </div>
 

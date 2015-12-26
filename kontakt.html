@@ -3,52 +3,54 @@ layout: page
 title: Longvas Oppmåling as - Kontakt
 ---
 
-<div class="row">
-    <div class="col-md-12">
-        <iframe class="map" width="450" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=longvas+oppm%C3%A5ling&amp;aq=&amp;sll=62.463806,6.380675&amp;sspn=0.002282,0.008256&amp;ie=UTF8&amp;hq=longvas+oppm%C3%A5ling&amp;hnear=&amp;t=m&amp;cid=16226776510782358926&amp;ll=62.466646,6.36795&amp;spn=0.017854,0.068579&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <iframe class="map" width="450" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=longvas+oppm%C3%A5ling&amp;aq=&amp;sll=62.463806,6.380675&amp;sspn=0.002282,0.008256&amp;ie=UTF8&amp;hq=longvas+oppm%C3%A5ling&amp;hnear=&amp;t=m&amp;cid=16226776510782358926&amp;ll=62.466646,6.36795&amp;spn=0.017854,0.068579&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <h1>Kontaktinformasjon</h1>
-        <table class="table">
-            <tr>
-                <th scope="row" class="col-xs-6 col-sm-4 col-md-2">Telefon</th>
-                <td class="col-xs-6 col-sm-8 col-md-10">70 14 80 40</td>
-            </tr>
-            <tr>
-                <th scope="row" class="col-xs-6 col-sm-4 col-md-2">E-post</th>
-                <td class="col-xs-6 col-sm-8 col-md-10"><a href="mailto:post@longvas.no">post@longvas.no</a></td>
-            </tr>
-            <tr>
-                <th scope="row" class="col-xs-6 col-sm-4 col-md-2">Org. nr</th>
-                <td class="col-xs-6 col-sm-8 col-md-10">979 397 496</td>
-            </tr>
-            <tr>
-                <th scope="row" class="col-xs-6 col-sm-4 col-md-2">Adresse</th>
-                <td class="col-xs-6 col-sm-8 col-md-10">Vasstrandvegen 71, 6011 Ålesund</td>
-            </tr>
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Kontaktinformasjon</h1>
+            <table class="table">
+                <tr>
+                    <th scope="row" class="col-xs-6 col-sm-4 col-md-2">Telefon</th>
+                    <td class="col-xs-6 col-sm-8 col-md-10">70 14 80 40</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="col-xs-6 col-sm-4 col-md-2">E-post</th>
+                    <td class="col-xs-6 col-sm-8 col-md-10"><a href="mailto:post@longvas.no">post@longvas.no</a></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="col-xs-6 col-sm-4 col-md-2">Org. nr</th>
+                    <td class="col-xs-6 col-sm-8 col-md-10">979 397 496</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="col-xs-6 col-sm-4 col-md-2">Adresse</th>
+                    <td class="col-xs-6 col-sm-8 col-md-10">Vasstrandvegen 71, 6011 Ålesund</td>
+                </tr>
 
-        </table>
+            </table>
+        </div>
     </div>
-</div>
 
-<div class="row">
-    <div class="col-md-12">
-        <h1>Ansatte</h1>
-        <table class="table">
-            <thead>
-            <tr>
-                <th class="col-xs-6 col-sm-4 col-md-2">Navn</th>
-                <th class="col-xs-6 col-sm-8 col-md-10">Telefonnummer</th>
-            </tr>
-            </thead>
-            {% for employee in site.data.employees %}
-            <tr>
-                <td class="col-xs-6 col-sm-4 col-md-2">{{ employee.name }}</td>
-                <td class="col-xs-6 col-sm-8 col-md-10">{{ employee.phone }}</td>
-            </tr>
-            {% endfor %}
-        </table>
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Ansatte</h1>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th class="col-xs-6 col-sm-4 col-md-2">Navn</th>
+                    <th class="col-xs-6 col-sm-8 col-md-10">Telefonnummer</th>
+                </tr>
+                </thead>
+                {% for employee in site.data.employees %}
+                <tr>
+                    <td class="col-xs-6 col-sm-4 col-md-2">{{ employee.name }}</td>
+                    <td class="col-xs-6 col-sm-8 col-md-10">{{ employee.phone }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
     </div>
 </div>
