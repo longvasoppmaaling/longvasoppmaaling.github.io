@@ -50,22 +50,15 @@ title: Longvas Oppmåling as - Tjenester
 </div>
 
 <div class="row">
+    {% for video in site.data.videos %}
     <div class="col-md-6 col-xs-12">
-        <h2>Modellering av kompleks geometri</h2>
+        <h2>{{ video.title }}</h2>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item"
-                    src="https://www.youtube.com/embed/TvGZq7LCnbA?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=1"
+                    src="https://www.youtube.com/embed/{{ video.videoid }}?rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1&amp;loop=1&amp;playlist={{ video.videoid }}"
                     allowfullscreen></iframe>
 
         </div>
     </div>
-    <div class="col-md-6 col-xs-12">
-        <h2>Punktsky til BIM</h2>
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item"
-                    src="https://www.youtube.com/embed/lQ-zj5B40ac?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=1"
-                    allowfullscreen></iframe>
-
-        </div>
-    </div>
+    {% endfor %}
 </div>
