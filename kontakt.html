@@ -43,17 +43,12 @@ title: Longvas Oppmåling as - Kontakt
                 <th class="col-xs-6 col-sm-8 col-md-10">Telefonnummer</th>
             </tr>
             </thead>
+            {% for employee in site.data.employees %}
             <tr>
-                <td class="col-xs-6 col-sm-4 col-md-2">Rune Longva</td>
-                <td class="col-xs-6 col-sm-8 col-md-10">92 68 65 95</td>
-            <tr>
-                <td class="col-xs-6 col-sm-4 col-md-2">Kim Truong</td>
-                <td class="col-xs-6 col-sm-8 col-md-10">92 63 21 19</td>
+                <td class="col-xs-6 col-sm-4 col-md-2">{{ employee.name }}</td>
+                <td class="col-xs-6 col-sm-8 col-md-10">{{ employee.phone }}</td>
             </tr>
-            <tr>
-                <td class="col-xs-6 col-sm-4 col-md-2">Per Johansen</td>
-                <td class="col-xs-6 col-sm-8 col-md-10">91 18 32 58</td>
-            </tr>
+            {% endfor %}
         </table>
     </div>
 </div>
