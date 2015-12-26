@@ -18,6 +18,7 @@ body {
 
 .content {
     padding: $global-margin;
+    padding-bottom: 4 * $global-margin;
     clear: both;
     overflow: hidden;
 }
@@ -76,10 +77,6 @@ p {
     @extend .textbase;
 }
 
-.label {
-    color: $label-color;
-}
-
 strong {
     @extend .textbase;
 }
@@ -89,7 +86,7 @@ h1 {
     clear: both;
 }
 
-/* 
+/*
     LINKS
 */
 
