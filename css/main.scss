@@ -105,27 +105,3 @@ a, a:link, a:hover, a:active, a:visited {
 strong a {
     font-weight: bold;
 }
-
-/* 
-    TABLE
-*/
-
-table {
-    @extend .textbase;
-    text-align: left;
-
-}
-
-table tr td {
-    padding: 0.3em;
-    padding-right: 2em;
-}
-
-table thead tr td{
-    @extend .label;
-    font-weight: bold;
-}
-
-.top-spaced {
-    margin-top: 2 * $global-margin
-}
