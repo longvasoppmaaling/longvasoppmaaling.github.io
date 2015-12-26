@@ -54,6 +54,8 @@ body {
 
 .jumbotron {
     background-color: $jumbotron-background-color;
+    border-top: 1px solid $stroke-color;
+    border-bottom: 1px solid $stroke-color;
 }
 
 /* Medium devices (desktops, 992px and up) */
