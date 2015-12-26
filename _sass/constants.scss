@@ -2,9 +2,10 @@
 $text-color: #292929;
 $stroke-color: $text-color;
 $background-color: #ffffff;
-$header-background-color: #f0f0f0;
+$secondary-background-color: #f0f0f0;
+$header-background-color: $secondary-background-color;
 $footer-background-color: $header-background-color;
-$alternate-background-color: $header-background-color;
+$jumbotron-background-color: $secondary-background-color;
 $separator-color: #707070;
 $label-color: $separator-color;
 

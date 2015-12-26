@@ -33,29 +33,46 @@ title: Longvas Oppmåling as - Tjenester
     </div>
 </div>
 
-<div class="row">
-    <div class="col-md-12">
-        <h1>Modellering</h1>
-        <p>Det umiddelbare resultatet av 3D-scanning er en punktsky bestående av millioner av punkter.
-            Fra dette kan vi bygge modeller som egner seg til bruk i DAK-programmer.</p>
-        <p>Under demonstrerer vi hvordan nøyaktige scan av virkelige bygninger kan omgjøres til
-            interaktive og detaljerte 3D-modeller.</p>
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Modellering</h1>
+            <p>Det umiddelbare resultatet av 3D-scanning er en punktsky bestående av millioner av punkter.
+                Fra dette kan vi bygge modeller som egner seg til bruk i DAK-programmer.</p>
+            <p>Under demonstrerer vi hvordan nøyaktige scan av virkelige bygninger kan omgjøres til
+                interaktive og detaljerte 3D-modeller.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        {% for video in site.data.videos %}
+        <div class="col-md-6 col-xs-12">
+            <h2>{{ video.title }}</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe id="yt_{{ video.videoid }}"
+                        class="embed-responsive-item ytvideo"
+                        src="https://www.youtube.com/embed/{{ video.videoid }}?rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;enablejsapi=1&amp;autoplay=1&amp;loop=1&amp;playlist={{ video.videoid }}"
+                        allowfullscreen></iframe>
+
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </div>
 
 <div class="row">
-    {% for video in site.data.videos %}
-    <div class="col-md-6 col-xs-12">
-        <h2>{{ video.title }}</h2>
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe id="yt_{{ video.videoid }}"
-                    class="embed-responsive-item ytvideo"
-                    src="https://www.youtube.com/embed/{{ video.videoid }}?rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;enablejsapi=1&amp;autoplay=1&amp;loop=1&amp;playlist={{ video.videoid }}"
-                    allowfullscreen></iframe>
+    <div class="col-md-12">
+        <h1>Oversikt over tjenester</h1>
+        <p>Som totalleverandør og spesialist tar vi på oss så godt som alle mulige typer oppdrag knyttet
+            til oppmåling. Longvas Oppmåling as er basert på Sunnmøre, men selv om de fleste oppdragene vi påtar oss er lokalisert
+            i denne regionen, har vi også utført oppdrag så langt borte som Finnmark.</p>
 
-        </div>
+            <p>Noen av de mest etterspurte tjenestene er:</p>
+        <ul>
+            <li>Masseberegning</li>
+            <li>Noe annet</li>
+        </ul>
     </div>
-    {% endfor %}
 </div>
 
 <script>
