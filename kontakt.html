@@ -15,7 +15,7 @@ title: Longvas Oppmåling as - Kontakt
             <table class="table">
                 <tr>
                     <th scope="row" class="col-xs-6 col-sm-4 col-md-2">Telefon</th>
-                    <td class="col-xs-6 col-sm-8 col-md-10">70 14 80 40</td>
+                    <td class="col-xs-6 col-sm-8 col-md-10"><a href="tel:+4770148040">70 14 80 40</a></td>
                 </tr>
                 <tr>
                     <th scope="row" class="col-xs-6 col-sm-4 col-md-2">E-post</th>
@@ -47,7 +47,7 @@ title: Longvas Oppmåling as - Kontakt
                 {% for employee in site.data.employees %}
                 <tr>
                     <td class="col-xs-6 col-sm-4 col-md-2">{{ employee.name }}</td>
-                    <td class="col-xs-6 col-sm-8 col-md-10">{{ employee.phone }}</td>
+                    <td class="col-xs-6 col-sm-8 col-md-10"><a href="tel:{{ employee.phone }}">{{ employee.formatted_phone }}</a></td>
                 </tr>
                 {% endfor %}
             </table>

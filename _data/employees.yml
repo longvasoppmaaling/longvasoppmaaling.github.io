@@ -1,8 +1,11 @@
 - name: Rune Longva
-  phone: 92 68 65 95
+  phone: '+4792686595'
+  formatted_phone: 92 68 65 95
 
 - name: Kim Truong
-  phone: 92 63 21 19
+  phone: '+4792632119'
+  formatted_phone: 92 63 21 19
 
 - name: Per Johansen
-  phone: 91 18 32 58
+  phone: '+4791183258'
+  formatted_phone: 91 18 32 58
